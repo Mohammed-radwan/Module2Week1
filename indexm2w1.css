@@ -1,0 +1,336 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+/* ----------------------The Header------------------------- */
+.nav{
+    display: grid;
+    grid-template-columns: 1fr  9fr;
+    grid-template-rows: 1.3fr 1fr 1fr ;
+    grid-template-areas: 
+    "nav-logo nav1"
+    "nav-logo nav2"
+    "nav3 nav3";
+    height: 5rem;
+}
+/* ----------------------The Logo------------------------- */
+.nav-logo{
+    grid-area: nav-logo;
+    background:linear-gradient(to right, rgb(134, 15, 99),rgb(230, 123, 176));
+    display: flex;
+}
+.nav-logo img{
+    width: 100%;
+    /* height: 4rem;  */
+    padding:0.7rem;
+}
+.nav-logo img:hover{
+    cursor: pointer;
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/home-1.gif");
+    background-position: center;
+    background-size: cover;
+}
+/* ----------------------Top-Navigator------------------------- */
+
+.nav1{
+    grid-area: nav1;
+    background-color: rgb(17, 17, 17);
+}
+
+/* ----------------------Middle-Navigator------------------------- */
+
+.nav2{
+    grid-area: nav2;
+    background-color: rgb(244, 243, 245);
+}
+/* ----------------------Buttom-Navigator------------------------- */
+
+.nav3{
+    grid-area: nav3;
+    background-color: rgb(228, 225, 80);
+}
+/* ----------------------Main Articles---------------------------- */
+
+.articles-main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "article1 article2"
+    "article1 article3";
+    grid-gap: 0.7rem;
+    padding: 0.3rem;
+    height: 30rem;
+}
+.article1{
+    grid-area: article1;
+    background: linear-gradient(to right,black ,#0009 ,#0c0b0b), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/LN-penises-doodle-796x454.png");    background-size: cover;
+    background-position: center center;
+}
+.article2{
+    grid-area: article2;
+    background: linear-gradient(to right,black ,#0009 ,#0c0b0b), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/Fitbit-Ace-796x410.jpg");
+    background-size: cover;
+    background-position: center center;
+
+}
+.article3{
+    grid-area: article3;
+    background: linear-gradient(to right,black ,#0009 ,#0c0b0b), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/Skyrim-Header-Alexa-796x398.jpg");
+    background-size: cover;
+    background-position: center center;
+
+}
+.articles-main img{
+    width: 100%;
+}
+
+/*===================================================================
+---------------------------CONTAINER---------------------------------
+=====================================================================*/
+.container{
+    margin:0 0;
+}
+
+/* --------------------Stories---------------------- */
+.story{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1.5rem;
+}
+.story  div img{
+    width: 100%;
+}
+.story div {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+} 
+.story-byline{
+    display: flex;
+}
+.story div a{
+    font-size: .9rem;
+    text-decoration: none;
+}
+/* --------------------Fundings---------------------- */
+.fundingnav{
+    display: flex;
+    justify-content: space-between;
+}
+.fundinglist{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.fundinglist a{
+    text-decoration: none;
+}
+.fundinglist li:not(:last-child)::after {
+    content: '|';
+    margin: 0.5rem;
+    padding: 0.5rem;  
+}
+.fundingcontents{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+.fundingcontents div{
+    background-color: #fffaf8;
+}
+.fundingcontents h2{
+    color: white;
+    background-color: orangered;
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding: 1rem ;
+    margin-bottom: -0.7rem;
+    margin-top: 0;
+    text-align: center;
+    padding-left: 5rem;
+}
+.fundingcontents h3{
+    background-color: #ffebe7;
+    font-family: sans-serif;
+    font-size: 1rem;
+    margin: -1.2rem auto;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+    padding-top: 0.4rem;
+}
+.fundingcontents img{
+    width: 4rem;
+    height: 4rem;
+    margin: -1.4rem 0.4rem;
+    display: inline-block;
+}
+.fundingcontents h4{
+    color: gray;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 1rem;
+}
+.fundingcontents h5{
+    color: gray;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 0.5rem;
+    border-top: #662929 solid 0.1rem;
+}
+/* --------------------MoreArticles---------------------- */
+.morearticles{
+    display: grid;  
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1.5rem;
+}
+.morearticles h1{
+    margin-top: 4rem;
+}
+.articles{
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/google-apple-cryptocurrency-368x276.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0.5rem;
+}
+.articlestail::before{
+    content: 'Latest';
+    color: #662929;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    position: absolute;
+    margin: 1rem 0;
+}
+.articlestail{
+    display: flex;
+    background-color: aliceblue;
+}
+.articlestail a{
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/apple-bitcoin.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    width: 70%;
+
+}
+.articlestail h3{
+    margin: 2.5rem 0;
+    padding: 0.5 rem 0;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+}
+.articleslist{
+    color: #1c4ccf;
+    margin-left: 0rem;
+    padding-left: 1rem;
+
+}
+.articleslist a{
+    text-decoration: none;
+    color: #0c0b0b;
+}
+.articleslist a:hover{
+    text-decoration: rgb(6, 15, 134);
+    text-decoration-line: underline;
+}
+.articleslist li{
+    border-bottom: 0.1rem solid #dedebb;
+    padding: 0.5rem 0;
+}
+/* --------------------Deals---------------------- */
+.dealslist img{
+    width: 100%;
+}
+.dealslist{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1.5rem;
+    padding-left: 0.3rem;
+}
+.dealslist li{
+    list-style: none;
+    position: relative;
+    color: grey;
+}
+.story-dealDiscount{
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #000;
+    display: block;
+    height: 80px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    z-index: 10;
+}
+.story-dealDiscount div{
+    transform: rotate(45deg);
+    font-size: 14px;
+    font-weight: 700;
+    left: 8px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 20px;
+    width: 100%;
+}
+.dealslist a{
+    text-decoration: none;
+    color: rgba(29, 26, 26, 0.952);
+}
+.dealsadress{
+    display: flex;
+    justify-content: space-between;
+}
+.storyold{
+    text-decoration-line: line-through;
+}
+/* --------------------Footer---------------------- */
+.media ul a{
+    border-radius: 50%;
+    background-color: #1a1111;
+    color: white;
+    height: 40px;
+    width: 40px;
+    display: block;
+    text-align: center;
+    padding-top: 0.7rem;
+}
+.media ul{
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    background-color: #363030;
+    margin-bottom: 0;    
+}
+    
+.media li{
+    list-style: none;
+    margin: 2rem 0.5rem;
+}
+span img{
+    width: 3rem;
+    display: inline-block;
+}
+.wrapper{
+    background-color: #0c0b0b;
+    color: #6f6967;
+    margin-top: 0;
+    padding: 2rem 0;
+    text-align: center;
+}
+b{
+    color: red;
+}
