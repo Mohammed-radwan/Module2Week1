@@ -14,7 +14,6 @@ body{
     "nav-logo nav1"
     "nav-logo nav2"
     "nav3 nav3";
-    height: 5rem;
 }
 /* ----------------------The Logo------------------------- */
 .nav-logo{
@@ -38,19 +37,77 @@ body{
 .nav1{
     grid-area: nav1;
     background-color: rgb(17, 17, 17);
+    display: flex;
+    justify-content: space-between;
 }
-
+.nav1 ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0.2rem;
+    align-items: center;
+}
+.nav1 a{
+    text-decoration: none;
+    /* color: rgb(255, 255, 255); */
+    margin: 0 0.3rem;
+    font-size: 0.9rem;
+    font-family: sans;
+    color: #bcb2b2;
+}
+.leftlist li:first-child a{
+    color: white;
+}
+.nav1 a:hover{
+    color: white;
+}
 /* ----------------------Middle-Navigator------------------------- */
 
 .nav2{
     grid-area: nav2;
     background-color: rgb(244, 243, 245);
+    display: flex;
+    justify-content: space-between
+}
+.nav2 ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0.2rem;
+    padding: 0;
+
+}
+.nav2 a{
+    text-decoration: none;
+    color: #999090;
+    text-transform: uppercase;
+    margin: 0 0.5rem;
+    font-family: sans-serif;
+}
+.nav2 a:hover{
+    color: #2e1f1f;
 }
 /* ----------------------Buttom-Navigator------------------------- */
 
 .nav3{
     grid-area: nav3;
     background-color: rgb(228, 225, 80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+}
+.nav3 p{
+    color: #1a1111;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+}
+.nav3 a{
+    text-decoration: none;
+    color: #0c0b0b;
+}
+.nav3 a:hover{
+    color: #363030;
 }
 /* ----------------------Main Articles---------------------------- */
 
