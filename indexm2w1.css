@@ -204,7 +204,7 @@ body{
 ---------------------------CONTAINER---------------------------------
 =====================================================================*/
 .container{
-    margin:0 0;
+    margin:0 0rem;
     padding: 0 0.3rem;
 }
 .latest-news h1{
@@ -330,9 +330,10 @@ body{
 }
 .morearticles h1{
     margin-top: 4rem;
+    font-family: Montserrat;
+    color: orangered;
 }
 .articles{
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/google-apple-cryptocurrency-368x276.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -340,42 +341,47 @@ body{
 }
 .articlestail::before{
     content: 'Latest';
-    color: #662929;
-    font-size: 1.3rem;
+    color: orangered;
+    font-size: 0.9rem;
     font-family: sans-serif;
     position: absolute;
-    margin: 1rem 0;
 }
 .articlestail{
     display: flex;
     background-color: aliceblue;
 }
+.articlestail img{
+    width: 100%;
+}
 .articlestail a{
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/apple-bitcoin.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat;
-    width: 70%;
-
+align-self: center;
 }
 .articlestail h3{
-    margin: 2.5rem 0;
-    padding: 0.5 rem 0;
     font-size: 0.9rem;
     font-family: sans-serif;
+    color: orangered;
+}
+.articles h5{
+    color: white;
+    text-shadow: 0.1rem 0.1rem black;
+}
+.articles h1{
+    color: white;
+    font-family: Montserrat;
 }
 .articleslist{
-    color: #1c4ccf;
+    color: orangered;
     margin-left: 0rem;
     padding-left: 1rem;
 
 }
 .articleslist a{
     text-decoration: none;
-    color: #0c0b0b;
+    color: #363232;
+    font-family: montserrat;
 }
 .articleslist a:hover{
-    text-decoration: rgb(6, 15, 134);
+    text-decoration: orangered;
     text-decoration-line: underline;
 }
 .articleslist li{
