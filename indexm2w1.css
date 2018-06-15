@@ -498,7 +498,7 @@ b{
 /*===================================================================
 ---------------------------Responsive Page---------------------------
 =====================================================================*/
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:850px){
     .articles-main{
         display: grid;
         grid-template-columns: 1fr;
@@ -516,5 +516,9 @@ b{
         color: white;
         font-family: sans-serif;
         font-size: 0.7rem;
+    }
+    .story{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1.5rem;
     }
 }
