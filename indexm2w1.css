@@ -464,10 +464,10 @@ align-self: center;
     text-align: center;
     padding-top: 0.7rem;
 }
-/* .media ul a:hover{
+.media ul a:hover{
     background-color: #a19898;
     color: #1a1111;
-} */
+}
 .media ul{
     display: flex;
     justify-content: center;
