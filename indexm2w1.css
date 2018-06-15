@@ -392,6 +392,19 @@ align-self: center;
 .dealslist img{
     width: 100%;
 }
+.dealsheader {
+    display: flex;
+    justify-content: space-between;
+    color: orangered;
+    font-family: Montserrat;
+}
+.dealsheader a{
+    text-decoration: none;
+    color: orangered;
+}
+.dealsheader a:hover{
+    color: orange;
+}
 .dealslist{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -432,10 +445,10 @@ align-self: center;
 .dealslist a{
     text-decoration: none;
     color: rgba(29, 26, 26, 0.952);
+    font-family: sans-serif;
 }
-.dealsadress{
-    display: flex;
-    justify-content: space-between;
+.dealslist a:hover{
+    color: rgb(90, 86, 86);
 }
 .storyold{
     text-decoration-line: line-through;
@@ -451,6 +464,10 @@ align-self: center;
     text-align: center;
     padding-top: 0.7rem;
 }
+/* .media ul a:hover{
+    background-color: #a19898;
+    color: #1a1111;
+} */
 .media ul{
     display: flex;
     justify-content: center;
