@@ -5,6 +5,7 @@ body{
 *{
     box-sizing: border-box;
 }
+
 /* ----------------------The Header------------------------- */
 .nav{
     display: grid;
@@ -493,4 +494,27 @@ span img{
 }
 b{
     color: red;
+}
+/*===================================================================
+---------------------------Responsive Page---------------------------
+=====================================================================*/
+@media only screen and (max-width:1000px){
+    .articles-main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "article1"
+        "article2"
+        "article3";
+        height: 30rem;
+    }
+    .coverlogo{
+        display: none;
+    }
+    .heads{
+        color: white;
+        font-family: sans-serif;
+        font-size: 0.7rem;
+    }
 }
