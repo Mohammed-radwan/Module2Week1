@@ -341,27 +341,42 @@ body{
     background-size: cover;
     padding: 0.5rem;
 }
-.articlestail::before{
+/* .articlestail::before{
     content: 'Latest';
     color: orangered;
     font-size: 0.9rem;
     font-family: sans-serif;
     position: absolute;
-}
+} */
 .articlestail{
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 0fr;
     background-color: aliceblue;
 }
+.articlestail div{
+    /* height: 6rem; */
+}
+.articlestail h6{
+    padding: 0;
+    margin: 0;
+}
 .articlestail img{
-    width: 100%;
+    width: 6.5rem;
+    height: 6.5rem;
 }
 .articlestail a{
-align-self: center;
+    height: 6.5rem;
+    width: 6.5rem;
 }
 .articlestail h3{
     font-size: 0.9rem;
     font-family: sans-serif;
     color: orangered;
+    margin-top: 0.5rem;
+}
+.articlestail h6{
+    color: orangered;
+    margin-top: 0.3rem;
 }
 .articles h5{
     color: white;
@@ -531,5 +546,20 @@ b{
     }
     .fundinglist{
         font-size: 0.7rem;
-        }
+    }
+    .morearticles{
+        grid-template-columns: 1fr;
+    }
+       .articlestail h3{
+        /* margin-top: 4rem; */
+    }
+    h6{
+        padding: 0; 
+    }
+    .morearticles h1{
+        margin-top: 0;
+    }
+    .articles{
+        height: 30rem;
+    }
 }
